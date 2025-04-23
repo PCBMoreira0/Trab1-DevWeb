@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -9,42 +10,165 @@
 
    <title>Boot</title>
 </head>
+
 <body>
+   <div class="container-fluid overflow-auto">
+      <div class="row row-cols-1 row-cols-sm-2 flex-sm-nowrap">
+         <div class="col">
+            <!-- #region Hatsune Miku card -->
+            <div class="card h-100">
+               <img src="assets/images/hatsune-miku-capa.webp" class="card-img-top" alt="hatsune-miku-capa">
+               <div class="card-body">
+                  <div class="text-center">
+                     <h5 class="card-title">Uma Miku Que Não Sabe Cantar</h5>
+                     <h6 class="card-subtitle mb-2                text-body-secondary">Sinopse</h6>
+                  </div>
+                  <p class="card-text" style="text-align: justify; text-indent:        1.5em; font-size: small;">Hatsune
+                     Miku, a icônica diva virtual, luta para compartilhar sua música com todos, mas algo não está
+                     funcionando.</p>
+               </div>
+               <div class="card-footer">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                     data-bs-target="#HatsuneMikuModal">
+                     Ver mais
+                  </button>
+               </div>
+            </div>
 
-   <div class="card" style="width: 18rem;">
-      <img src="assets/images/hatsune-miku-capa.webp" class="card-img-top" alt="hatsune-miku-capa">
-      <div class="card-body">
-         <div class="text-center">
-            <h5 class="card-title">Uma Miku Que Não Sabe Cantar</h5>
-            <h6 class="card-subtitle mb-2       text-body-secondary">Sinopse</h6>
+            <!-- Modal -->
+            <div class="modal fade" id="HatsuneMikuModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Uma Miku Que Não Sabe Cantar</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <img src="assets/images/hatsune-miku-capa-grande.webp" alt="hatsune-miku-capa-grande"
+                           class="img-fluid mb-2">
+                        <p style="text-align: justify; text-indent: 1.5em;">Hatsune Miku, a icônica diva virtual, luta
+                           para compartilhar sua música com todos, mas algo não está funcionando. É então que ela cruza
+                           caminhos com Ichika, uma jovem cantora com um talento único para tocar os corações das
+                           pessoas através de suas apresentações de rua. Desesperada, Miku pede sua ajuda para garantir
+                           que sua música alcance aqueles que mais precisam. Juntas, elas embarcam em uma aventura
+                           mágica e musical que mudará suas vidas para sempre.</p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- #endregion -->
          </div>
-         <p class="card-text" style="text-align: justify; text-indent: 1.5em; font-size: small;">Hatsune Miku, a icônica diva virtual, luta para compartilhar sua música com todos, mas algo não está funcionando. ...</p>
-         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Ver mais
-         </button>
-      </div>
-   </div>
+         <div class="col">
+            <!-- #region Demon Slayer card -->
+            <div class="card h-100">
+               <img src="assets/images/demon-slayer-capa.webp" class="card-img-top" alt="demon-slayer-capa">
+               <div class="card-body">
+                  <div class="text-center">
+                     <h5 class="card-title">Demon Slayer: Castelo Infinito</h5>
+                     <h6 class="card-subtitle mb-2                   text-body-secondary">Sinopse</h6>
+                  </div>
+                  <p class="card-text .text-truncate-multiline"
+                     style="text-align: justify; text-indent: 1.           5em; font-size: small;">
+                     Japão, era Taisho. Tanjiro, um bondoso
+                     jovem
+                     que ganha a vida vendendo carvão, descobre que sua família foi massacrada por um demônio.</p>
+               </div>
+               <div class="card-footer">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                     data-bs-target="#demonSlayerModal">
+                     Ver mais
+                  </button>
+               </div>
+            </div>
 
-   <!-- Modal -->
-   <div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Uma Miku Que Não Sabe Cantar</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="assets/images/hatsune-miku-capa-grande.webp" alt="hatsune-miku-capa-grande" class="img-fluid">
-            <p style="text-align: justify; text-indent: 1.5em;">Hatsune Miku, a icônica diva virtual, luta para compartilhar sua música com todos, mas algo não está funcionando. É então que ela cruza caminhos com Ichika, uma jovem cantora com um talento único para tocar os corações das pessoas através de suas apresentações de rua. Desesperada, Miku pede sua ajuda para garantir que sua música alcance aqueles que mais precisam. Juntas, elas embarcam em uma aventura mágica e musical que mudará suas vidas para sempre.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
+            <!-- Modal -->
+            <div class="modal fade" id="demonSlayerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="Demon Slayer">Demon Slayer: Castelo Infinito</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <img src="assets/images/demon-slayer-capa-grande.webp" alt="demon-slayer-capa-grande"
+                           class="img-fluid mb-2">
+                        <p style="text-align: justify; text-indent: 1.5em;">Japão, era Taisho. Tanjiro, um bondoso
+                           jovem
+                           que ganha a vida vendendo carvão, descobre que sua família foi massacrada por um demônio.
+                           E
+                           pra piorar, Nezuko, sua irmã mais nova e única sobrevivente, também foi transformada num
+                           demônio. Arrasado com esta sombria realidade, Tanjiro decide se tornar um matador de
+                           demônios
+                           para fazer sua irmã voltar a ser humana, e para matar o demônio que matou sua família. Um
+                           triste conto sobre dois irmãos, onde os destinos dos humanos e dos demônios se entrelaçam,
+                           começa agora.</p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- #endregion -->
+         </div>
+         <div class="col">
+            <!-- #region Hatsune Miku Card -->
+            <div class="card h-100">
+               <img src="assets/images/hatsune-miku-capa.webp" class="card-img-top" alt="hatsune-miku-capa">
+               <div class="card-body">
+                  <div class="text-center">
+                     <h5 class="card-title">Uma Miku Que Não Sabe Cantar</h5>
+                     <h6 class="card-subtitle mb-2                text-body-secondary">Sinopse</h6>
+                  </div>
+                  <p class="card-text" style="text-align: justify; text-indent:        1.5em; font-size: small;">Hatsune
+                     Miku, a icônica diva virtual, luta para compartilhar sua música com todos, mas algo não está
+                     funcionando. ...</p>
+               </div>
+               <div class="card-footer">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                     data-bs-target="#HatsuneMikuModal">
+                     Ver mais
+                  </button>
+               </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="HatsuneMikuModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Uma Miku Que Não Sabe Cantar</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <img src="assets/images/hatsune-miku-capa-grande.webp" alt="hatsune-miku-capa-grande"
+                           class="img-fluid mb-2">
+                        <p style="text-align: justify; text-indent: 1.5em;">Hatsune Miku, a icônica diva virtual, luta
+                           para compartilhar sua música com todos, mas algo não está funcionando. É então que ela cruza
+                           caminhos com Ichika, uma jovem cantora com um talento único para tocar os corações das
+                           pessoas através de suas apresentações de rua. Desesperada, Miku pede sua ajuda para garantir
+                           que sua música alcance aqueles que mais precisam. Juntas, elas embarcam em uma aventura
+                           mágica e musical que mudará suas vidas para sempre.</p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- #endregion -->
+         </div>
       </div>
    </div>
 
    <script src="assets/js/bootstrap.js"></script>
    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
