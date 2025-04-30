@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
    <link rel="stylesheet" href="assets/css/bootstrap.css">
-   <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="assets/css/style_movies.css">
 
    <title>Boot</title>
 </head>
@@ -53,52 +53,54 @@
    <!-- #endregion -->
 
    <!-- #region Carousel <-->
-   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/images/hatsune-miku-capa-grande.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-block">
-            <h5>Uma Miku Que Não Sabe Cantar</h5>
-            <p>Lançamento Maio 2025</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/images/demon-slayer-capa-grande.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-block">
-            <h5>Demon Slayer: Castelo Infinito</h5>
-            <p>Lançamento Setembro 2025</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/images/hatsune-miku-capa-grande.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-block">
-            <h5>Uma Miku Que Não Sabe Cantar</h5>
-            <p>Lançamento Julho 2025</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+   <div class="container mb-4">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="assets/images/hatsune-miku-capa-grande.webp" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-block">
+               <h5>Uma Miku Que Não Sabe Cantar</h5>
+               <p>Lançamento Maio 2025</p>
+             </div>
+           </div>
+           <div class="carousel-item">
+             <img src="assets/images/demon-slayer-capa-grande.webp" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-block">
+               <h5>Demon Slayer: Castelo Infinito</h5>
+               <p>Lançamento Setembro 2025</p>
+             </div>
+           </div>
+           <div class="carousel-item">
+             <img src="assets/images/hatsune-miku-capa-grande.webp" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-block">
+               <h5>Uma Miku Que Não Sabe Cantar</h5>
+               <p>Lançamento Julho 2025</p>
+             </div>
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+   </div>
     <!-- #endregion -->
    
    <!-- #region Container Comédia-->
-   <div class="container container-fluid">
+   <div class="container container-fluid mb-2">
       <h2>Anime / Desenho</h2>
 
-      <div class="overflow-x-scroll">
-         <div class="row row-cols-2 row-cols-sm-4 row-cols-md-5 flex-nowrap">
-         <div class="col">
+      <div class="card-area">
+         <div class="row row-cols-2 row-cols-sm-4 row-cols-md-5 flex-nowrap g-3 g-md-0">
+         <div class="col pt-md-3 pb-md-3 ps-md-4">
          <!-- #region Hatsune Miku card -->
             <button type="button" class="btn p-0" data-bs-toggle="modal"
             data-bs-target="#HatsuneMikuModal">
-               <div class="card h-100">
+               <div class="card">
                   <img src="assets/images/hatsune-miku-capa.webp"    class="card-img-top" alt="hatsune-miku-capa">
                </div>
             </button>
@@ -130,7 +132,7 @@
             </div>
          <!-- #endregion -->
          </div>
-         <div class="col">
+         <div class="col pt-md-3 pb-md-3 ps-md-4">
          <!-- #region Demon Slayer card -->
             <button type="button" class="btn p-0" data-bs-toggle="modal"
             data-bs-target="#demonSlayerModal">
@@ -170,41 +172,15 @@
             </div>
          <!-- #endregion -->
          </div>
-         <div class="col">
-         <!-- #region Hatsune Miku Card -->
-            <button type="button" class="btn p-0" data-bs-toggle="modal"
-            data-bs-target="#HatsuneMikuModal">
+         <div class="col pt-md-3 pb-md-3 ps-md-4">
+         <!-- #region Demon Slayer card -->
+            <button type="button" class="btn p-0"data-bs-toggle="modal"
+            data-bs-target="#13">
                <div class="card h-100">
-                  <img src="assets/images/hatsune-miku-capa.webp"    class="card-img-top" alt="hatsune-miku-capa">
+                  <img src="assets/images/adolescencia.jpg"   class="card-img-top" alt="adolescencia">
                </div>
             </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="HatsuneMikuModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-               aria-hidden="true">
-               <div class="modal-dialog">
-                  <div class="modal-content">
-                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Uma Miku Que Não Sabe Cantar</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                     </div>
-                     <div class="modal-body">
-                        <img src="assets/images/hatsune-miku-capa-grande.webp" alt="hatsune-miku-capa-grande"
-                           class="img-fluid mb-2">
-                        <p style="text-align: justify; text-indent: 1.5em;">Hatsune Miku, a icônica diva virtual, luta
-                           para compartilhar sua música com todos, mas algo não está funcionando. É então que ela cruza
-                           caminhos com Ichika, uma jovem cantora com um talento único para tocar os corações das
-                           pessoas através de suas apresentações de rua. Desesperada, Miku pede sua ajuda para garantir
-                           que sua música alcance aqueles que mais precisam. Juntas, elas embarcam em uma aventura
-                           mágica e musical que mudará suas vidas para sempre.</p>
-                     </div>
-                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         <!-- #endregion -->
+         </div>
          </div>
       </div>
    </div>
