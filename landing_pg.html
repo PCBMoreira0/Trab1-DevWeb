@@ -52,40 +52,52 @@
 
 <!-- Seção de sugestões -->
 <div class="container py-5">
-    <h2 class="mb-2">Sugestões dos desenvolvedores</h2>
-</div>
-
-
-<div class="card-deck">
-    <div class="row justify-content-center">
-        <div class="col-sm-2 d-flex">
-            <div class="card bg-black h-100 flex-column">
-                <img class="card-img-top" src="assets/images/hatsune-miku-capa.webp" alt="">
-            </div>
+    <h2 class="mb-4">Sugestões dos desenvolvedores</h2>
+  
+    <!-- Scroll horizontal -->
+    <div class="overflow-auto">
+      <div class="d-flex flex-nowrap gap-3 pb-2">
+  
+        <div class="card bg-black border-0 flex-shrink-0" style="width: 180px; height: 270px;">
+          <img src="assets/images/hatsune-miku-capa.webp" class="card-img-top h-100 object-fit-cover rounded" alt="">
         </div>
-        <div class="col-sm-2 d-flex">
-            <div class="card bg-black h-100 flex-column">
-                <img class="card-img-top" src="assets/images/caos_e_destruicao.jpg" alt="">
-            </div>
+  
+        <div class="card bg-black border-0 flex-shrink-0" style="width: 180px; height: 270px;">
+          <img src="assets/images/caos_e_destruicao.jpg" class="card-img-top h-100 object-fit-cover rounded" alt="">
         </div>
-        <div class="col-sm-2 d-flex">
-            <div class="card bg-black h-100 flex-column">
-                <img class="card-img-top" src="assets/images/interstellar.png" alt="">
-            </div>
+  
+        <div class="card bg-black border-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#interstellar-modal" style="width: 180px; height: 270px;">
+          <img src="assets/images/interstellar.png" class="card-img-top h-100 object-fit-cover rounded" alt="">
         </div>
-        <div class="col-sm-2 d-flex">
-            <div class="card bg-black h-100 flex-column">
-                <img class="card-img-top" src="assets/images/adolescencia.jpg" alt="">
-            </div>
+  
+        <div class="card bg-black border-0 flex-shrink-0" style="width: 180px; height: 270px;">
+          <img src="assets/images/adolescencia.jpg" class="card-img-top h-100 object-fit-cover rounded" alt="">
         </div>
-        <div class="col-sm-2 d-flex">
-            <div class="card bg-black h-100 flex-column">
-                <img class="card-img-top" src="assets/images/demon-slayer-capa.webp" alt="">
-            </div>
+  
+        <div class="card bg-black border-0 flex-shrink-0" style="width: 180px; height: 270px;">
+          <img src="assets/images/demon-slayer-capa.webp" class="card-img-top h-100 object-fit-cover rounded" alt="">
         </div>
+  
+      </div>
     </div>
-</div>
+  </div>
 <br><br><br>
+
+<div class="modal fade" id="interstellar-modal" tabindex="-1" aria-labelledby="interstellarlabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="interstellarlabel">Interstellar</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/interstellar.png" class="img-fluid rounded mb-3" alt="Interstellar">
+          <p>Uma breve descrição do filme Interstellar pode ir aqui. Explore o espaço e o tempo...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <footer>
     <div class="container">
         <p style="font-size: medium; color:darkgray;">Ideias? Entre em contato consoco em <u>movieflix.contato@gmail.com</u></p>
