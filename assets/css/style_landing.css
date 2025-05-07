@@ -27,12 +27,25 @@ body {
   font-weight: bold;
   color: cyan;
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card img {
+  object-fit: cover;
+  height: 100%;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.text-darkgrey{
+  color: darkgrey;
+}
+
 @media (min-width: 768px) {
   .card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
-}
-.text-darkgrey{
-  color: darkgrey;
 }
