@@ -11,6 +11,8 @@ body {
   }
 
   .card {
+    background-color: black;
+    overflow: hidden;
     height: 100%;
     width: 100%;
     display: flex;
@@ -24,11 +26,8 @@ body {
   }
   @media(min-width: 768px){
   .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
-  }
-  .text-darkgrey {
-    color: darkgrey;
   }
 
   .card-area {
@@ -39,4 +38,29 @@ body {
   .card-area {
     position: relative; left: -1.5rem;
   }
+}
+
+@media(min-width: 768px){
+.carousel-inner {
+  height: 0;
+  padding-bottom: 25%; /* this sets carousel aspect ratio (4:1 here) */
+}}
+
+@media(max-width: 767.98px){
+  .carousel-inner {
+    height: 0;
+    padding-bottom: 60%; /* this sets carousel aspect ratio (4:1 here) */
+  }}
+
+.carousel-item {
+  position: absolute !important; /* Bootstrap is insistent */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel-item img {
+  height: 100%; /* Bootstrap handles width already */
+  object-fit: cover; /* or 'contain' if you want stretch instead of crop */
 }
