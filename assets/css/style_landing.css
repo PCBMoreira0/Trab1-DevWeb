@@ -31,21 +31,19 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
 }
 .card img {
   object-fit: cover;
   height: 100%;
+  display: block;
+  border-radius: 0;
 }
 .card:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .text-darkgrey{
   color: darkgrey;
-}
-
-@media (min-width: 768px) {
-  .card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }
 }
