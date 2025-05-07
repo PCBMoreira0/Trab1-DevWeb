@@ -6,6 +6,7 @@
   <title>Movieflix: a pretty movie catalogue</title>
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <link href="assets/css/style_landing.css" rel="stylesheet">
+  <link href="assets/css/style_modal.css" rel="stylesheet">
 </head>
 <body class="overflow-x-hidden">
 
@@ -56,7 +57,7 @@
   
     <!-- Scroll horizontal -->
     <div class="overflow-auto py-2">
-      <div class="d-flex flex-nowrap gap-3 pb-2">
+      <div class="d-flex flex-nowrap justify-content-center gap-3 pb-2">
   
         <div class="card bg-black border-0 flex-shrink-0" style="width: 180px; height: 270px;">
           <img src="assets/images/hatsune-miku-capa.webp" class="card-img-top h-100 object-fit-cover " alt="">
@@ -66,7 +67,7 @@
           <img src="assets/images/caos_e_destruicao.jpg" class="card-img-top h-100 object-fit-cover " alt="">
         </div>
   
-        <div class="card bg-black border-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#interstellar-modal" style="width: 180px; height: 270px;">
+        <div class="card bg-black border-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#interstellarModal" style="width: 180px; height: 270px;">
           <img src="assets/images/interstellar.png" class="card-img-top h-100 object-fit-cover " alt="">
         </div>
   
@@ -83,19 +84,42 @@
 </div>
 <br><br><br>
 
-<div class="modal fade" id="interstellar-modal" tabindex="-1" aria-labelledby="interstellarlabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content bg-dark text-white">
-        <div class="modal-header">
-          <h5 class="modal-title" id="interstellarlabel">Interstellar</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+<div class="modal fade" id="interstellarModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+      <div class="modal-body p-0 position-relative">
+        <div class="position-relative">
+          <img src="assets/images/interstellar_modal.webp" class="w-100 object-fit-cover" style="max-height: 300px; object-position: top;" alt="">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+            <h1 class="display-6 fw-bold text-shadow">INTERSTELLAR</h1>
+          </div>
         </div>
-        <div class="modal-body">
-          <img src="assets/images/interstellar.png" class="img-fluid  mb-3" alt="Interstellar">
-          <p>Uma breve descrição do filme Interstellar pode ir aqui. Explore o espaço e o tempo...</p>
+
+        <div class="p-4">
+          <div class="mb-3 d-flex flex-wrap gap-2">
+            <span class="badge bg-secondary">2025</span>
+            <span class="badge bg-secondary">A12</span>
+            <span class="badge bg-secondary">Série</span>
+            <span class="badge bg-secondary">Realities</span>
+          </div>
+
+          <p class="text-white-50">
+            As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas 
+            recebe a missão de verificar possíveis planetas para receberem a população 
+            mundial, possibilitando a continuação da espécie. Cooper é chamado para 
+            liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
+          </p>
+
+          <button class="btn btn-info mt-3">
+            Vamos lá <i class="bi bi-arrow-right"></i>
+          </button>
         </div>
+
       </div>
     </div>
+  </div>
 </div>
 
 <footer>
