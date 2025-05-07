@@ -1,6 +1,6 @@
 .bg-gradient-dark {
     background: linear-gradient(to top, 
-        rgba(18, 18, 18, 1) 12%, rgba(18, 18, 18, 0)
+        rgba(18, 18, 18, 1), rgba(18, 18, 18, 0)
     );
   }
   
