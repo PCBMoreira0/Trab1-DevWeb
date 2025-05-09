@@ -1,0 +1,50 @@
+.accordion {
+    background-color: black;
+}
+
+.accordion-button.collapsed {
+  background-color: black;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: black;
+  color: white;
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+.card {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+@media(min-width: 768px) {
+    .cont-size {
+        width: 40rem;
+    }
+}
+
+.text-darkgrey{
+  color: darkgrey;
+}
