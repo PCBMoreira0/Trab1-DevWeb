@@ -3,14 +3,13 @@
 }
 
 .accordion-button.collapsed {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
 .accordion-button:not(.collapsed) {
   background-color: black;
   color: white;
-  box-shadow: none;
 }
 
 .accordion-body {
@@ -18,10 +17,13 @@
   color: #ffffff;
 }
 
+.accordion-button:hover {
+  background-color: rgb(37, 101, 153);
+}
+
 .accordion-button:focus {
   box-shadow: none;
 }
-
 
 body {
     background-color: black;
@@ -47,4 +49,20 @@ body {
 
 .text-darkgrey{
   color: darkgrey;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+a.estilo-texto {
+  text-decoration: none;      
+  color: inherit;             
+  cursor: pointer;            
+  transition: color 0.3s ease;
+}
+
+a.estilo-texto:hover {
+  color: #007bff;        
 }
